@@ -1,0 +1,32 @@
+{
+  "name": "fcc-API_projects",
+  "private": true,
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.14.0",
+    "moment": "^2.19.1",
+    "reload": "^2.2.2",
+    "request": "^2.83.0"
+  },
+  "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app"
+  },
+  "engines": {
+    "node": "6.11.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emg-py/fcc-TimestampMicroservice.git"
+  },
+  "description": "Série des 'API Projects' du programme freecodecamp.org",
+  "version": "0.1.0",
+  "keywords": [
+    "freecodecamp",
+    "backend",
+    "API projects",
+    "projets API"
+  ],
+  "author": "py",
+  "license": "MIT"
+}

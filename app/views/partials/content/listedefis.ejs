@@ -1,0 +1,14 @@
+<article class="listeDefis"><% defis.forEach(function(item) { %>
+          <h3 class="listeDefis-title"><%= item.titre %></h3>
+          <h5 class="listeDefis-name"><%= item.soustitre %></h5>
+          <p class="listeDefis-info">
+          <%- item.section %>
+          </p>
+          <h5><%= item.userstoriestitre %></h5>
+            <ul>        <% item.userstories.forEach(function(item) { %>
+              <li>
+                <%= item %>
+              </li><%  }); %> 
+            </ul>
+          <p>Pour prendre connaissance de la présentation originale de l'exercice, suivre <a href="<%= item.urlFCC %>">ce lien</a>.</p><%  }); %>
+        </article>

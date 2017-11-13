@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body id="<%= pageID %>">
+    <% include partials/template/header.ejs %>
+    <% include partials/template/listedefisNav.ejs %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+        <% include partials/content/listedefis.ejs %>
+        </div><!-- primary -->
+        <aside class="col-md-5">
+          <% include partials/content/resultats.ejs %>
+        </aside>
+      </div><!-- fin row -->
+    </div><!-- container -->
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>

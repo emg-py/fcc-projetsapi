@@ -1,0 +1,28 @@
+<header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/">Projets API</a>
+          <div class="collapse navbar-collapse" id="navbars">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#apropos">À propos </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exercices</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown">
+                  <% pageDefis.forEach(function(item) { %><a class="dropdown-item" href="/defis/<%= item.url %>"><%= item.titre %></a>
+  <% }); %>              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <div class="col-8">
+          <h1 class="display-4"><a href="/"><img class="img-fluid d-none d-sm-inline" src="/images/misc/icones/favicon72.png"/> Projets API</a></h1>
+         <h3>une série de défis du programme </br><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org <img class="d-none d-sm-inline" src="/images/misc/icones/fcc_puckRoundedCorners32.png"/></a></h3>
+        </div>
+      </div>
+    </section>

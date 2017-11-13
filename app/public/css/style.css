@@ -1,0 +1,62 @@
+body {
+  min-height: 100%; 
+}
+
+header {
+  background: transparent;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 5rem;
+  background-image:url('../images/misc/background.jpg');
+  background-size:cover;
+  height: 400px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.jumbotron a, .jumbotron h3 {
+  color: white;
+}
+
+.jumbotron .container {
+  max-width: 60rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+
+.display-4 {
+  font-size: 7vmin;
+}
+
+h3 {
+  font-size: 3vmin;
+}
+
+.resultats {
+  color: white;
+  background-color: black;
+  min-height: 250px;
+  padding: 15px;
+  margin-top: 2rem;
+}
+
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.apropos {
+  font-weight: bolder;
+}
