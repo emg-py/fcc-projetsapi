@@ -22,6 +22,8 @@ router.get('/defis/:url', function(requete, reponse) {
   var data = requete.app.get('appData');
   var pageDefis = [];
   var pageStories = [];
+  var pageResultats = [];
+  var pageLiensTests = [];
 
   data.defis.forEach(function(item) {
     if (item.url == requete.params.url) {
@@ -42,7 +44,7 @@ router.get('/defis/timestamp', function(requete, reponse) {
   var pageDefis = [data.defis[0]];
   var pageStories = [data.defis[0]];
 
-  reponse.render('defis', {
+  reponse.render('timestamp', {
     pageTitle: 'les défis',
     defis: pageDefis,
     pageID: 'listedefis'
@@ -62,6 +64,7 @@ router.use('/defis/timestamp/:temps', function(requete, reponse, next) {
       status = 'succès';
       //resultat = json;
       resultat = JSON.stringify(JSON.parse(json), null, 2);
+      console.log(resultat);
       next();
     } else {
       next(erreur);
@@ -81,8 +84,42 @@ router.get('/defis/timestamp/:temps', function(requete, reponse, next) {
     pageApi: resultat,
     pageID: 'listedefis'
   });
-//    console.log('2      resultat  ' + resultat);
 });
+
+/*
+ * Script Request Header Parser
+ */
+
+// interroger l'api distante si un paramètre est transmis
+router.use('/defis/request_header_parser/test', function(requete, reponse, next) {
+// selon : https://stackoverflow.com/questions/25183228/make-a-get-request-to-json-api-in-node-js
+  request('https://fcc-requestheaderparser.glitch.me', function (erreur, reponse, json){
+    if (!erreur && reponse.statusCode == 200) {
+      status = 'succès';
+      resultat = json;
+      //      resultat = JSON.stringify(json, null, 2);
+      console.log(resultat);
+      next();
+    } else {
+      next(erreur);
+    }
+  })
+});
+
+router.get('/defis/request_header_parser/test', function(requete, reponse, next) {
+    var data = requete.app.get('appData');
+    var pageDefis = [data.defis[1]];
+    var pageStories = [data.defis[1]];
+  
+    reponse.render('requestheader', {
+    pageTitle: 'le défi : request header parser microservice',
+    defis: pageDefis,
+    pageApi: resultat,
+    pageID: 'listedefis'
+  });
+    console.log('2      resultat  ' + resultat);
+});
+
 
 // si aucune route ne peut être suivie, erreur 404
 router.use(function(req, res, next){

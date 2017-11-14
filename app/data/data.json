@@ -6,7 +6,9 @@
     "soustitre": "Premier exercice dans la série des 'API Projects' du programme freecodecamp.org.",
     "section": "Après une introduction aux bibliothèques JavaScript Node.js et Express.js ainsi qu'à la base de données NoSQL MongoDB, ce premier exercice de la série 'API Projects' reprend les éléments d'exercices précédents : 'HTTP JSON API Server' et 'Time Server'. L'objectif semble donc être l'intégration des différents éléments d'une page web. Cette application sera hébergée par le service Glitch.com.",
     "userstoriestitre": "Fonctionnalités attendues ('user Stories')",
-    "userstories": ["Je peux transmettre une 'string' en paramètre, l'application vérifiera si elle contient une date dans un format 'timestamp unix' ou en langage naturel (ex : January 1, 2017)", "Si le paramètre est bien une date dans l'un des formats prévus, l'application fournit les formes 'timestamp unix' et en langage naturel de cette date.", "Si le paramètre ne contient pas de date dans un des formats attendus, l'application renvoie 'null' pour les deux propriétés."]
+    "userstories": ["Je peux transmettre une chaîne de caractères en paramètre, l'application vérifiera si elle contient une date dans un format 'timestamp unix' ou en langage naturel (ex : January 1, 2017)", "Si le paramètre est bien une date dans l'un des formats prévus, l'application fournit les formes 'timestamp unix' et en langage naturel de cette date.", "Si le paramètre ne contient pas de date dans un des formats attendus, l'application renvoie 'null' pour les deux propriétés."],
+    "resultats": "Le résultat de l'API timestamp se présente sous la forme d'un fichier au format .json. En testant la fonctionnalité de ma solution, vous pourrez voir ce fichier s'afficher ci-dessous.",
+    "liensTest": ["https://emg-py--projetsapi.glitch.me/defis/timestamp/1234567890", "https://emg-py--projetsapi.glitch.me/defis/timestamp/13 novembre 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/November 13, 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/une chaîne en erreur"]
   },{
     "titre" : "Request Header Parser Microservice",
     "url": "request_header_parser",
@@ -14,7 +16,9 @@
     "soustitre": "Second exercice dans la série des 'API Projects' du programme freecodecamp.org.",
     "section": "Après une introduction aux bibliothèques JavaScript Node.js et Express.js ainsi qu'à la base de données NoSQL MongoDB, ce second exercice de la série 'API Projects' affiche les informations fournies par le navigateur visitant la page : adresse IP, langue, OS. Cette application sera hébergée par le service Glitch.com.",
     "userstoriestitre": "Fonctionnalités attendues ('user Stories')",
-    "userstories": ["Je peux obtenir l'adresse IP, le paramètre de langue et le système OS de mon navigateur."]
+    "userstories": ["Je peux obtenir l'adresse IP, le paramètre de langue et le système OS de mon navigateur."],
+    "resultats": "Le résultat de l'API 'request header parser' vous indiquera l'adresse ip de la machine effectuant la requête, soit le serveur hébergeant cette page. Pour tester le bon fonctionnement du service, veuillez suivre les liens présentés ci-dessous.",
+    "liensTest": ["https://emg-py--projetsapi.glitch.me/defis/request_header_parser/test","                                      https://fcc-requestheaderparser.glitch.me"]
   },{
     "titre" : "URL Shortener Microservice",
     "url": "url_shortener",
@@ -22,7 +26,9 @@
     "soustitre": "Troisième exercice dans la série des 'API Projects' du programme freecodecamp.org.",
     "section": "Après une introduction aux bibliothèques JavaScript Node.js et Express.js ainsi qu'à la base de données NoSQL MongoDB, ce troisième exercice met en place un système fournissant des URL raccourcies. Il nécessite l'utilisation d'une base de données MongoDB. Cette application sera hébergée par le service Glitch.com.",
     "userstoriestitre": "Fonctionnalités attendues ('user Stories')",
-    "userstories": ["Je peux transmettre une URL en paramètre pour recevoir une URL raccourcie dans un format JSON.", "Si je transmets une URL non valide, la réponse JSON contiendra un message d'erreur.", "Quand je suis cette URL raccourcie, je retrouve le lien original."]
+    "userstories": ["Je peux transmettre une URL en paramètre pour recevoir une URL raccourcie dans un format JSON.", "Si je transmets une URL non valide, la réponse JSON contiendra un message d'erreur.", "Quand je suis cette URL raccourcie, je retrouve le lien original."],
+    "resultats": "Le résultat des différentes 'API' de cette page se présentent sous la forme de fichiers au format .json. En testant la fonctionnalité de mes solutions, vous pourrez voir ces fichiers s'afficher ci-dessous.",
+    "liensTest": ["https://emg-py--projetsapi.glitch.me/defis/timestamp/1234567890", "https://emg-py--projetsapi.glitch.me/defis/timestamp/13 novembre 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/November 13, 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/une chaîne en erreur"]
   },{
     "titre" : "Image Search Abstraction Layer",
     "url": "image_search",
@@ -30,7 +36,9 @@
     "soustitre": "Quatrième exercice dans la série des 'API Projects' du programme freecodecamp.org.",
     "section": "Après une introduction aux bibliothèques JavaScript Node.js et Express.js ainsi qu'à la base de données NoSQL MongoDB, ce quatrième exercice permet au visiteur de faire des recherches d'images. Cette application sera hébergée par le service Glitch.com.",
     "userstoriestitre": "Fonctionnalités attendues ('user Stories')",
-    "userstories": ["Je peux obtenir les adresses URL, les textes de présentation et les adresses URL des pages pour un groupe d'images fournies par une recherche.", "Je peux atteindre les différentes pages de résultats en ajoutant le paramètre ?offset=2 à l'adresse.", "Je peux consulter la liste des recherches les plus récentes."]
+    "userstories": ["Je peux obtenir les adresses URL, les textes de présentation et les adresses URL des pages pour un groupe d'images fournies par une recherche.", "Je peux atteindre les différentes pages de résultats en ajoutant le paramètre ?offset=2 à l'adresse.", "Je peux consulter la liste des recherches les plus récentes."],
+    "resultats": "Le résultat des différentes 'API' de cette page se présentent sous la forme de fichiers au format .json. En testant la fonctionnalité de mes solutions, vous pourrez voir ces fichiers s'afficher ci-dessous.",
+    "liensTest": ["https://emg-py--projetsapi.glitch.me/defis/timestamp/1234567890", "https://emg-py--projetsapi.glitch.me/defis/timestamp/13 novembre 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/November 13, 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/une chaîne en erreur"]
   },{
     "titre" : "File Metadata Microservice",
     "url": "file_metadata",
@@ -38,7 +46,9 @@
     "soustitre": "Cinquième et dernier exercice dans la série des 'API Projects' du programme freecodecamp.org.",
     "section": "Après une introduction aux bibliothèques JavaScript Node.js et Express.js ainsi qu'à la base de données NoSQL MongoDB, ce dernier exercice de la série retourne la taille en octets d'un fichier transmis au moyen d'un formulaire. Cette application sera hébergée par le service Glitch.com.",
     "userstoriestitre": "Fonctionnalités attendues ('user Stories')",
-    "userstories": ["Je peux transmettre un fichier par l'intermédiaire d'un formulaire de téléversement.", "Si je transmets quelque chose, je reçois en retour la taille en octets de cet élément."]
+    "userstories": ["Je peux transmettre un fichier par l'intermédiaire d'un formulaire de téléversement.", "Si je transmets quelque chose, je reçois en retour la taille en octets de cet élément."],
+    "resultats": "Le résultat des différentes 'API' de cette page se présentent sous la forme de fichiers au format .json. En testant la fonctionnalité de mes solutions, vous pourrez voir ces fichiers s'afficher ci-dessous.",
+    "liensTest": ["https://emg-py--projetsapi.glitch.me/defis/timestamp/1234567890", "https://emg-py--projetsapi.glitch.me/defis/timestamp/13 novembre 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/November 13, 2017", "https://emg-py--projetsapi.glitch.me/defis/timestamp/une chaîne en erreur"]
   }],
   "infos": [{
     "titre": "Projets API",

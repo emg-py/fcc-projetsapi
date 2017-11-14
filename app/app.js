@@ -11,7 +11,6 @@ app.set('views', 'app/views');
 
 app.locals.siteTitle = 'API Projects';
 app.locals.pageDefis = dataFile.defis;
-app.locals.pageDefisStories = dataFile.defis.userstories;
 
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
